@@ -1,0 +1,146 @@
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+:root {
+   --background: #F2F0F3;
+   --secondary-background:#F6F6F4;
+   --foreground: #B1F0D4;
+   --secondary-foreground: #C2749D;
+   --foreground-shade: #B1F0b4;
+   --color1: #F46A68;
+}
+
+
+body{
+   background-color:var(--background);
+}
+
+a{
+   text-decoration: none;
+   color: var(--foreground);
+}
+table,td, tr{
+   border: 1px solid black;
+}
+
+table{
+   width:100%;
+}
+
+a:hover{
+   color:var(--foreground-shade);
+}
+
+ul, ol{
+   list-style-type: none;
+}
+
+.topbar {
+   position: sticky;
+   top: 0;
+   background-color: var(--color1);
+   color: var(--foreground);
+   height: 10vh;
+   min-width: 100vw;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   padding: 20px;
+   z-index:100;
+}
+
+#logo{
+   height:10vh;
+   width: auto;
+}
+
+.topbar-list{
+   display:flex;
+   gap: 15px;
+}
+
+.hero {
+   background-image: url("./image/8ed24487a3c802f61cf9a0b2da93bdf3.jpg");
+   background-size: cover;
+   color: var(--foreground);
+   position: relative;
+   height: 90vh;
+   min-width: 100vw;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   z-index: 10;
+   margin-bottom:20px;
+}
+
+.shade {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: #000000A0;
+   z-index: 20;
+}
+
+.section{
+   background-color: var(--secondary-background);
+   display:flex;
+   justify-content:center;
+   gap: 40px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 20px;
+}
+.pricing-list{
+   background-color: var(--background);
+   color: var(--secondary-foreground);
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   padding:20px;
+   border: 2px solid var(--color1);
+   border-radius: 20px;
+}
+.hotel-image{
+   width: 50vw;
+   height:auto;
+}
+
+.big-text{
+   font-size: 3rem;
+   z-index: 30;
+}
+.mid-text{
+   font-size: 2rem;
+   z-index: 30;
+}
+.small-mid-text{
+   font-size: 1.5rem;
+   z-index: 30;
+}
+.small-text{
+   font-size: 1rem;
+   z-index: 30;
+}
+.horizontal-line{
+   background-color:var(--color1);
+   width: 80%;
+   height:4px;
+   margin-bottom: 20px;
+}
+
+.two-col-img{
+   width: 30%;
+   height:auto;
+}
