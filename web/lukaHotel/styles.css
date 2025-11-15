@@ -25,8 +25,21 @@ a{
    text-decoration: none;
    color: var(--foreground);
 }
-table,td, tr{
+table,td, tr, th{
    border: 1px solid black;
+   border-collapse:collapse;
+}
+
+td,th{
+   padding:4px 0;
+}
+
+td{
+   text-align:center;
+}
+
+.table-SN{
+   width: 40px;
 }
 
 table{
@@ -101,6 +114,20 @@ ul, ol{
    margin-bottom: 20px;
    padding: 20px;
 }
+
+.section-verticle{
+   background-color: var(--secondary-background);
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   gap: 40px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 20px;
+}
+
+
+
 .pricing-list{
    background-color: var(--background);
    color: var(--secondary-foreground);
@@ -140,6 +167,11 @@ ul, ol{
    margin-bottom: 20px;
 }
 
+.flex{
+   display:flex;
+   justify-content:center;
+   gap:10px;
+}
 .two-col-img{
    width: 30%;
    height:auto;
